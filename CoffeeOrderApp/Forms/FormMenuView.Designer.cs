@@ -29,7 +29,6 @@ namespace CoffeeOrderApp.Forms
 
             SuspendLayout();
 
-            // mainLayout
             mainLayout.Dock = DockStyle.Fill;
             mainLayout.RowCount = 2;
             mainLayout.ColumnCount = 1;
@@ -38,7 +37,6 @@ namespace CoffeeOrderApp.Forms
             mainLayout.Padding = new Padding(20);
             mainLayout.BackColor = ColorTranslator.FromHtml("#3E2723");
 
-            // dgvMenu
             dgvMenu.Dock = DockStyle.Fill;
             dgvMenu.ReadOnly = true;
             dgvMenu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -46,13 +44,11 @@ namespace CoffeeOrderApp.Forms
             dgvMenu.BackgroundColor = ColorTranslator.FromHtml("#FFF3E0");
             dgvMenu.CellClick += new DataGridViewCellEventHandler(this.dgvMenu_CellClick);
 
-            // buttonPanel
             buttonPanel.Dock = DockStyle.Fill;
             buttonPanel.FlowDirection = FlowDirection.LeftToRight;
             buttonPanel.AutoSize = true;
             buttonPanel.Padding = new Padding(0, 10, 0, 0);
 
-            // btnBack
             btnBack.Text = "Назад";
             btnBack.Size = new Size(120, 40);
             btnBack.BackColor = ColorTranslator.FromHtml("#795548");
@@ -60,7 +56,6 @@ namespace CoffeeOrderApp.Forms
             btnBack.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnBack.Click += new System.EventHandler(this.btnBack_Click);
 
-            // btnChangeStatus
             btnChangeStatus.Text = "Змінити наявність";
             btnChangeStatus.Size = new Size(180, 40);
             btnChangeStatus.BackColor = ColorTranslator.FromHtml("#795548");
@@ -74,7 +69,6 @@ namespace CoffeeOrderApp.Forms
             mainLayout.Controls.Add(dgvMenu, 0, 0);
             mainLayout.Controls.Add(buttonPanel, 0, 1);
 
-            // Form
             this.Text = "Перегляд меню";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
