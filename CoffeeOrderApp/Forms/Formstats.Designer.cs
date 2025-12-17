@@ -38,7 +38,6 @@ namespace CoffeeOrderApp.Forms
             mainLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
             mainLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 
-            // Верхняя панель для ComboBox, DatePickers и кнопок экспорта
             topPanel = new FlowLayoutPanel
             {
                 Dock = DockStyle.Fill,
@@ -47,7 +46,6 @@ namespace CoffeeOrderApp.Forms
             };
             mainLayout.Controls.Add(topPanel, 0, 0);
 
-            // DataGridView
             dgvStats = new DataGridView
             {
                 Dock = DockStyle.Fill,
@@ -58,7 +56,6 @@ namespace CoffeeOrderApp.Forms
             };
             mainLayout.Controls.Add(dgvStats, 0, 1);
 
-            // Нижняя панель с суммой и кнопкой назад
             lblTotal = new Label
             {
                 Text = "Сума: 0 грн",
@@ -104,7 +101,7 @@ namespace CoffeeOrderApp.Forms
             return new Button
             {
                 Text = text,
-                BackColor = ColorTranslator.FromHtml("#FF9800"), // Сделал оранжевый, чтобы было видно
+                BackColor = ColorTranslator.FromHtml("#FF9800"),
                 ForeColor = Color.White,
                 Font = new Font("Segoe UI", 14F, FontStyle.Bold),
                 Width = 150,
