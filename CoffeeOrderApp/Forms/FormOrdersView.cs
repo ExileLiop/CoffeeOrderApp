@@ -15,7 +15,6 @@ namespace CoffeeOrderApp.Forms
             InitializeComponent();
             _mainForm = mainForm;
 
-            // Настройка цветов DataGridView
             dgvOrders.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#FFF3E0");
             dgvOrders.DefaultCellStyle.ForeColor = Color.Black;
             dgvOrders.RowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#FFF3E0");
