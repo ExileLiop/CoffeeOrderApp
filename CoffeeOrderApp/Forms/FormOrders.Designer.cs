@@ -95,7 +95,6 @@ namespace CoffeeOrderApp.Forms
             mainLayout.Controls.Add(buttonPanel, 1, 0);
             mainLayout.Controls.Add(dgvCart, 2, 0);
 
-            // Нижня панель
             var bottomPanel = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
@@ -103,9 +102,9 @@ namespace CoffeeOrderApp.Forms
                 RowCount = 1,
                 AutoSize = true
             };
-            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F)); // Назад зліва
-            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 5F));  // Проміжок
-            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45F)); // Зберегти + Сума справа
+            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 5F));
+            bottomPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45F));
 
             bottomPanel.Controls.Add(btnBack, 0, 0);
 
@@ -116,8 +115,8 @@ namespace CoffeeOrderApp.Forms
                 Dock = DockStyle.Right,
                 AutoSize = true
             };
-            rightPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize)); // кнопка
-            rightPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize)); // сума
+            rightPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            rightPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             rightPanel.Controls.Add(btnSave, 0, 0);
             rightPanel.Controls.Add(lblTotal, 0, 1);
 
