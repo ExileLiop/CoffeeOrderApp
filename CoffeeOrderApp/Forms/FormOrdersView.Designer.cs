@@ -47,7 +47,6 @@ namespace CoffeeOrderApp.Forms
                 ForeColor = Color.Black
             };
 
-            // Цвета заголовков
             dgvOrders.ColumnHeadersDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#795548");
             dgvOrders.ColumnHeadersDefaultCellStyle.ForeColor = ColorTranslator.FromHtml("#FFF3E0");
             dgvOrders.EnableHeadersVisualStyles = false;
